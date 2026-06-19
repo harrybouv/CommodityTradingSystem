@@ -1,0 +1,37 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyCharm / IDE
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+*.env
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+
+# Large or regenerable data
+Commodity_System/data/raw/
+Commodity_System/data/processed/
+
+# Temporary outputs
+Commodity_System/results/backtest/
+Commodity_System/results/parameter_testing/
+Commodity_System/results/overlay_parameter_testing/
+
+# Keep versioned/final results manually if wanted
+!Commodity_System/results/version_curves/
+!Commodity_System/results/version_curves/*.csv
