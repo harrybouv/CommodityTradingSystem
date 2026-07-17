@@ -3,7 +3,6 @@
 import sys
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,13 +10,10 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from Commodity_System.config import (
-    PROCESSED_DATA_DIR,
     RESULTS_DIR,
     INITIAL_CAPITAL,
     TRADING_DAYS_PER_YEAR,
     TOTAL_COST_BPS,
-    MAX_ASSET_WEIGHT,
-    MIN_SCORE_TO_HOLD,
     BACKTEST_REBALANCE_MODE,
 )
 
@@ -26,7 +22,7 @@ from analytics import (
     calculate_alpha_beta,
 )
 
-from backtester import (
+from Commodity_System.research.Backtesting.backtester import (
     load_return_matrix,
     apply_rebalance,
     make_equal_weight,

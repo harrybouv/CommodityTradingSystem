@@ -1,37 +1,59 @@
-# Virtual environment
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Virtual environments
 .venv/
 venv/
+env/
 
-# Python cache
+# Python caches and build files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
 
-# PyCharm / IDE
+# IDE settings
 .idea/
+.vscode/
 
-# OS files
+# Operating-system files
 .DS_Store
 Thumbs.db
 
-# Environment / secrets
-.env
-*.env
-
-# Test/cache
-.pytest_cache/
-.mypy_cache/
-
-# Large or regenerable data
+# Downloaded and generated datasets
 Commodity_System/data/raw/
 Commodity_System/data/processed/
 
-# Temporary outputs
-Commodity_System/results/backtest/
-Commodity_System/results/parameter_testing/
-Commodity_System/results/overlay_parameter_testing/
+# Generated research and backtest outputs
+Commodity_System/results/
+Commodity_System/exports/
 
-# Keep versioned/final results manually if wanted
-!Commodity_System/results/version_curves/
-!Commodity_System/results/version_curves/*.csv
+# Mutable paper-trading data
+Commodity_System/paper_trading/data/
+Commodity_System/paper_trading/logs/
+Commodity_System/paper_trading/output/
+Commodity_System/paper_trading/state/
+Commodity_System/paper_trading/*.csv
+Commodity_System/paper_trading/*.json
+Commodity_System/paper_trading/*.log
+Commodity_System/paper_trading/reports/
+Commodity_System/paper_trading/snapshots/
+
+# Local databases and temporary files
+*.db
+*.sqlite
+*.sqlite3
+*.tmp
+*.bak
