@@ -17,7 +17,7 @@ The model ranks liquid commodity ETFs using a shared base score:
 - Volatility — 19%
 - Risk — 29%
 
-These signals are combined with asset-specific overlays for gold, silver, copper, oil, natural gas and agriculture. Inputs include prices, real yields, the US dollar, Chinese Industrial activity, EIA balances, weather and agricultural data.
+These signals are combined with asset-specific overlays for gold, silver, copper, oil, natural gas and agriculture. Inputs include prices, real yields, the US dollar, Chinese industrial activity, EIA balances, weather and agricultural data.
 
 All non-price data are aligned to the date on which they were available using as-of joins and explicit release lags. Portfolio construction applies score thresholds, position and group caps, cash allocation, turnover controls, execution delay and liquidity limits.
 
@@ -67,7 +67,7 @@ Walk-forward results test performance across changing market environments rather
 
 <img width="2296" height="1037" alt="walk_forward_periods" src="https://github.com/user-attachments/assets/e869c171-b532-4a8d-a954-a0db303ec787" />
 
-<img width="1800" height="1260" alt="peturbations" src="https://github.com/user-attachments/assets/62d0f53e-04ff-4f0e-903d-44d6639dc24a" />
+<img width="1800" height="1260" alt="perturbations" src="https://github.com/user-attachments/assets/62d0f53e-04ff-4f0e-903d-44d6639dc24a" />
 
 The selected-versus-rejected test provides a direct check of whether the ranking process separates stronger subsequent returns from weaker opportunities.
 
@@ -77,15 +77,15 @@ Forward returns are measured over the next rebalance period (1 month). Selected 
 
 <img width="2048" height="968" alt="var" src="https://github.com/user-attachments/assets/d466136a-a442-476c-b213-95ad6547ae4b" />
 
-The distribution of net daily returns remains concentrated around zero, with historical 95% and 99% VaR thresholds used to quantify left tailed risk. Note fat tails can be observed.
+The distribution of net daily returns remains concentrated around zero, with historical 95% and 99% VaR thresholds used to quantify left-tail risk. Note fat tails can be observed.
 
 <img width="1485" height="1313" alt="heatmap" src="https://github.com/user-attachments/assets/6531740d-c5c1-4c05-9464-bdc3680c6a4a" />
 
-Daily asset returns were generally weakly correlated, supporting cross-commodity diversification, the pricncipal exeption was 0.78 between gold and silver - a very expected result.
+Daily asset returns were generally weakly correlated, supporting cross-commodity diversification, the principal exception was 0.78 between gold and silver - a very expected result.
 
 <img width="1923" height="943" alt="returns" src="https://github.com/user-attachments/assets/57ffc3a2-8764-4515-aaf2-47058660ac60" />
 
-All six assets contributed positively to cumulative returns. Gold was the largest contributor, but performance was not solely dependent on precious metals
+All six assets contributed positively to cumulative returns. Gold was the largest contributor, but performance was not solely dependent on precious metals.
 
 
 ## Research findings
