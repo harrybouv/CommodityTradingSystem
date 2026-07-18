@@ -87,6 +87,12 @@ Daily asset returns were generally weakly correlated, supporting cross-commodity
 
 All six assets contributed positively to cumulative returns. Gold was the largest contributor, but performance was not solely dependent on precious metals.
 
+## Full research log
+
+The complete development history—including rejected experiments, ablation,
+walk-forward validation, parameter sensitivity, execution realism, backward
+holdout failure and bear-regime rectification—is available in the
+[Commodity Research Log](Commodity%20Research%20Log.pdf).
 
 ## Research findings
 
